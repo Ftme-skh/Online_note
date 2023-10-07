@@ -7,10 +7,6 @@ from datetime import date
 import psycopg2
 conn = psycopg2.connect(host="localhost",database="notes_db",user="postgres",password="postgres")
 cur = conn.cursor()
-# my_notes = [
-#     {"text" : "sample note", "content" : "Don't forget to buy mushrooms", "date" : '2023-09-11 18:34:56.741911'},
-#     {"text" : "another sample note", "content" : "Today I feel happy above the sky", "date" : '2023-09-11 18:28:56.741911'},
-# ]
 my_data = []
 
 app = Flask(__name__)
